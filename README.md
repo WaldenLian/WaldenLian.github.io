@@ -10,4 +10,4 @@
 
 ## Reference
 
-* The Jekyll theme is designed by zhanxin.lin, and you can visit his repository at [here](https://github.com/pizn/pizn.github.com)
+* The Jekyll theme is accessed from mzlogin, and you can visit his repository at [here](https://github.com/mzlogin/mzlogin.github.io)
