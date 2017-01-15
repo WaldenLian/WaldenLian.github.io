@@ -1,4 +1,4 @@
-# Jekyll-Merlog
+# Qi's Blog
 
 ## Config
 
