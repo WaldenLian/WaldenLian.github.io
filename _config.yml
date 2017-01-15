@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: http://waldenlan.github.io
 date_format: "ordinal"
 title: Qi's Blog
 subtitle: Back to my own...
@@ -84,11 +84,9 @@ repository: waldenlan/waldenlan.github.io
 #      Socials     #
 # ---------------- #
 github_username: waldenlan
-douban_username: freedim
-facebook_username: mzlogin
-weibo_username: mzlogin
+segmentfault_username: waldenlan
+facebook_username: waldenlan
 zhihu_username: WaldenLian
-twitter_username: mzlogin
 
 # ---------------- #
 #      Comments    #
