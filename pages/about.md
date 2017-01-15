@@ -3,7 +3,7 @@ layout: page
 title: About
 description: Back to my own...
 keywords: Walden Lian, WaldenLan
-comments: true
+comments: false
 menu: 关于
 permalink: /about/
 ---
@@ -19,6 +19,8 @@ Back to my own...
     <a href="http://umji.sjtu.edu.cn" target="_blank">UM-SJTU Joint Institute</a>. Currently, I'm going to serve as an Software Engineer intern at <a href="http://www.cisco.com/" target="_blank">Cisco</a>. My research interests are machine learning, data mining and web development. You can find most of my works
     <a href="http://github.com/waldenlan" target="_blank">here</a>.
 </p>
+
+<img src="/images/about/walden.jpg" alt="personal photo" width="450"/>
 
 ## Area of Interests
 
