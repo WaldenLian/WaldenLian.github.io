@@ -12,4 +12,5 @@ permalink: /links/
 
 * [小皇博客](http://xiaohuang.famousedu.com/)
 * [Qi's Blog](http://waldenlan.github.io/)
+* [Zihan](https://lizihan021.github.io/)
 * [码志](http://mazhuang.org)
