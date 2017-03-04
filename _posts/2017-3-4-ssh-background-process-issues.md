@@ -10,7 +10,7 @@ keywords:       SSH, Linux
 
 During my internship, SSH is always involved in my daily work. So one issue occurs to me:
 
-```
+``` 
 I launch the Django server in the background with the command: python3 manage.py runserver &
 Then after doing some coding for my project, I exit the SSH. 
 When I refresh the site page of my project, it's successively loaded as expected.
@@ -18,7 +18,15 @@ When I refresh the site page of my project, it's successively loaded as expected
 But when I relogin the SSH, although the server is running, I can neither catch the log of the server nor see the server process listed in the background processes with the command: jobs
 ```
 
+```python
+@requires_authorizationdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+class SomeClass:
+    pass
 
+if __name__ == '__main__':
+    # A comment
+    print 'hello world'
+```
 ### Principles
 
 For the underlying principles, first we need to be clear about what do our background processes belong to. Why can we list the background process when we don't exit the SSH? That's because those background processes belong to the SSH process. When our SSH exits, we lose the control of those processes.

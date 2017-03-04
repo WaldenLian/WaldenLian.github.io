@@ -2,7 +2,7 @@
 layout: wiki
 title: Chrome
 categories: Chrome
-description: Chrome 常用操作。
+description: Chrome Shortcuts。
 keywords: Chrome
 ---
 
@@ -12,4 +12,9 @@ keywords: Chrome
 ```
 Ctrl + [PgUp]/[PgDn]
 Ctrl + [Tab]/[Shfit+Tab]
+```
+* Go to the top of the page
+```
+Home
+PgUp/PgDn
 ```
