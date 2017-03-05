@@ -13,4 +13,5 @@ permalink: /links/
 * [小皇博客](http://xiaohuang.famousedu.com/)
 * [Qi's Blog](http://waldenlan.github.io/)
 * [Zihan](https://lizihan021.github.io/)
+* [JasonQSY](https://jasonqsy.github.io/blog/)
 * [码志](http://mazhuang.org)
