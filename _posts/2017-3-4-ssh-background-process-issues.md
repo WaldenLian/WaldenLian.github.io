@@ -4,6 +4,7 @@ title:          Background Process Issues related to SSH
 categories:     [Linux]
 description:    When launching a process in the background, the process log can't be caught in the foreground after exiting and re-logining the SSH.
 keywords:       SSH, Linux
+comments: true
 ---
 
 ### Problem Introduction

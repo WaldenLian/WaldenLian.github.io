@@ -94,8 +94,8 @@ zhihu_username: WaldenLian
 # support provider: disqus, duoshuo
 # comments_provider: duoshuo
 # !!!Important!!! Please modify usernames below to yours
-duoshuo_username: waldenlian
-# disqus_username: mzlogin
+#duoshuo_username: waldenlian
+disqus_username: qi_lian
 # 在使用 disqus 的时候可点击显示多说评论框
 lazy_load_duoshuo: true
 
