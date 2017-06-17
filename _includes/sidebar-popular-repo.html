@@ -1,11 +1,72 @@
 <h3>My Selected Repositories</h3>
 
+<script type="text/javascript">
+    var DisqusRecent = {
+        init: function( config ) {
+            this.api_key     = config.api_key;
+            this.forum       = config.forum;
+            this.template    = config.template;
+            this.container   = config.container;
 
-<div id="recentcomments" class="dsq-widget">
-    <script type="text/javascript"
-            src="http://waldenlan.disqus.com/combination_widget.js?num_items=25&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+            this.fetchRecentComments();
+        },
 
-</div><a href="http://disqus.com/">Powered by Disqus</a>
+        fetchRecentComments: function() {
+            $.ajax({
+                url: "https://disqus.com/api/3.0/forums/listPosts.jsonp?forum="+this.forum+"&related=thread&api_key="+this.api_key,
+                dataType: "jsonp",
+                context: this,
+
+                success: function(results) {
+                    var source   = $(this.template).html();
+                    var template = Handlebars.compile(source);
+                    $(this.container).html(template(results));
+
+                    $('.timeago').timeago();
+                }
+            });
+        }
+    }
+
+    $(function() {
+        DisqusRecent.init({
+            api_key:     'TKTCg5o9e5uCDcB4M2bynOeWVGPrvgLuxSZeFEoYfaZQ9bTm8FyCFxwF6OR6327q',
+            forum:       'waldenlan',
+            template:    '#comments-template',
+            container:   '#comments'
+        });
+    });
+</script>
+<ul id="comments">
+    <script id="comments-template" type="text/x-handlebars-template">
+        {{#each response}}
+        <li>
+            <div class="avatar-container">
+                <a href="{{author.profileUrl}}" target="_blank">
+                    <img src="{{author.avatar.small.permalink}}" class="avatar" alt="avatar" />
+                </a>
+            </div>
+            <div class="post-container">
+                <a href="{{author.profileUrl}}" class="author_name" target="_blank">
+                <span class="author_name">{{author.name}}
+                </a>
+
+                <span class="bullet" aria-hidden="true">•</span>
+
+                <span class="timeago" title="{{createdAt}}Z">{{createdAt}}</span>
+
+                <p>{{{message}}}</p>
+
+                <span class="posted">posted on <a href="{{thread.link}}" target="_blank">{{thread.title}}</a></span>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+</ul>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
 
 
 {% if site.github.public_repositories != null %}
