@@ -1,5 +1,36 @@
 <h3>My Selected Repositories</h3>
 
+
+<ul id="comments">
+    <script id="comments-template" type="text/x-handlebars-template">
+        {{#each response}}
+        <li>
+            <div class="avatar-container">
+                <a href="{{author.profileUrl}}" target="_blank">
+                    <img src="{{author.avatar.small.permalink}}" class="avatar" alt="avatar" />
+                </a>
+            </div>
+            <div class="post-container">
+                <a href="{{author.profileUrl}}" class="author_name" target="_blank">
+                <span class="author_name">{{author.name}}
+                </a>
+
+                <span class="bullet" aria-hidden="true">•</span>
+
+                <span class="timeago" title="{{createdAt}}Z">{{createdAt}}</span>
+
+                <p>{{{message}}}</p>
+
+                <span class="posted">posted on <a href="{{thread.link}}" target="_blank">{{thread.title}}</a></span>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+</ul>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
 <script type="text/javascript">
     var DisqusRecent = {
         init: function( config ) {
@@ -37,37 +68,6 @@
         });
     });
 </script>
-<ul id="comments">
-    <script id="comments-template" type="text/x-handlebars-template">
-        {{#each response}}
-        <li>
-            <div class="avatar-container">
-                <a href="{{author.profileUrl}}" target="_blank">
-                    <img src="{{author.avatar.small.permalink}}" class="avatar" alt="avatar" />
-                </a>
-            </div>
-            <div class="post-container">
-                <a href="{{author.profileUrl}}" class="author_name" target="_blank">
-                <span class="author_name">{{author.name}}
-                </a>
-
-                <span class="bullet" aria-hidden="true">•</span>
-
-                <span class="timeago" title="{{createdAt}}Z">{{createdAt}}</span>
-
-                <p>{{{message}}}</p>
-
-                <span class="posted">posted on <a href="{{thread.link}}" target="_blank">{{thread.title}}</a></span>
-            </div>
-        </li>
-        {{/each}}
-    </script>
-</ul>
-
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
-
 
 {% if site.github.public_repositories != null %}
 {% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse%}
