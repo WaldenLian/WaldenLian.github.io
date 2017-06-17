@@ -1,12 +1,36 @@
 <h3>My Selected Repositories</h3>
 
 
-<div id="recentcomments" class="dsq-widget">
-    <script type="text/javascript"
-            src="http://waldenlan.disqus.com/combination_widget.js?num_items=25&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+<div id="comments"></div>
 
-</div><a href="http://disqus.com/">Powered by Disqus</a>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
 
+    $(document).ready(function() {
+
+        $commentDiv = $("#comments");
+
+        $.get("https://disqus.com/api/3.0/forums/listPosts.json?forum=cflib&limit=10&related=thread&api_key=TKTCg5o9e5uCDcB4M2bynOeWVGPrvgLuxSZeFEoYfaZQ9bTm8FyCFxwF6OR6327q", function(res, code) {
+            //Good response?
+            if(res.code === 0) {
+                var result = "";
+                for(var i=0, len=res.response.length; i<len; i++) {
+                    var post = res.response[i];
+                    console.dir(post);
+                    var html = "<div class='comment'>";
+                    html += "<img src='" + post.author.avatar.small.permalink + "'>";
+                    html += "<a href='"+ post.author.profileUrl + "'>" + post.author.name + "</a>";
+                    html += "<p>"+post.raw_message+"</p>";
+                    html += "<p class='postRef'>Posted at " + post.createdAt + " on <a href='"+ post.thread.link + "'>" + post.thread.title + "</a></p>";
+                    html += "</div>";
+
+                    result+=html;
+                }
+                $commentDiv.html(result);
+            }
+        });
+    });
+</script>
 
 {% if site.github.public_repositories != null %}
 {% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse%}
