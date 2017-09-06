@@ -4,13 +4,11 @@ title: About
 description: Back to my own...
 keywords: Walden Lian, WaldenLan
 comments: false
-menu: 关于
+menu: About
 permalink: /about/
 ---
 
-为显得更Professional一些，这页下面内容用英文写了～
-
-Back to my own...
+> Back to my own...
 
 ## Basic Info
 
