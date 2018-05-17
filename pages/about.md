@@ -8,27 +8,25 @@ menu: About
 permalink: /about/
 ---
 
-> Back to my own...
+> 一个浪费了很多时间的理想主义者。。。
 
 ## Basic Info
 
-<p>Hi! I'm Qi Lian, and you can call me Walden Lan.</p>
-<p>Currently, I'm an undergraduate at <a href="http://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>. I'm a junior student major in ECE (Electrical and Computer Engineering) in
-    <a href="http://umji.sjtu.edu.cn" target="_blank">UM-SJTU Joint Institute</a>. Currently, I'm serving as an Software Engineer intern at <a href="http://www.cisco.com/" target="_blank">Cisco</a>. My research interests are machine learning, data mining and web development. You can find most of my works
-    <a href="http://github.com/waldenlan" target="_blank">here</a>.
+<p>Hi! I'm Qi Lian, and you can call me Walden Lian.</p>
+<p>Currently, I'm an undergraduate at <a href="http://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>. I'm a senior student major in ECE (Electrical and Computer Engineering) in
+    <a href="http://umji.sjtu.edu.cn" target="_blank">UM-SJTU Joint Institute</a>.
 </p>
 
 <img src="/images/about/walden.jpg" alt="personal photo" width="450"/>
 
 ## Area of Interests
 
-* Data Mining
-* Machine Learning
 * Web Development (Both Front-end and Back-end)
-
-## Resume
-
-You can see my resume <a href="/Resume.pdf" target="_blank">here</a>.
+* Distributed Systems
+* Database Systems
+* 王道漫画
+* 流行乐
+* 长跑
 
 ## Contact
 
