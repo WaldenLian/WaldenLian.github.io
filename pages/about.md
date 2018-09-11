@@ -13,8 +13,7 @@ permalink: /about/
 ## Basic Info
 
 <p>Hi! I'm Qi Lian, and you can call me Walden Lian.</p>
-<p>Currently, I'm an undergraduate at <a href="http://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>. I'm a senior student major in ECE (Electrical and Computer Engineering) in
-    <a href="http://umji.sjtu.edu.cn" target="_blank">UM-SJTU Joint Institute</a>.
+<p>Currently, I'm a graduate student at <a href="https://www.cmu.edu/about/" target="_blank">Carnegie Mellon University</a> with a focus on System Infrastructures and Web Application Development. I received my B.S. degree in Electrical and Computer Engineering from <a href="http://www.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>.
 </p>
 
 <img src="/images/about/walden.jpg" alt="personal photo" width="450"/>

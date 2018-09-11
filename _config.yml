@@ -109,5 +109,5 @@ google:
 #      Datas       #
 # ---------------- #
 skill_prog_keywords: [C, C++, Python, Java, MATLAB, LaTex, Markdown]
-skill_web_dev_keywords: [HTML, CSS, JavaScript (jQuery), Django, SQL]
-skill_hardware_OS_keywords: [Bash Scripting, Verilog HDL, MIPS Assembly, Linux (Ubuntu), Windows]
+skill_web_dev_keywords: [HTML/CSS, JavaScript, jQuery, Django, MySQL, MongoDB]
+skill_hardware_OS_keywords: [Bash Scripting, Verilog HDL, MIPS Assembly, MacOS, Linux (Ubuntu), Windows]
