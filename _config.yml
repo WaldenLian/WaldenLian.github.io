@@ -17,9 +17,9 @@ side_bar_repo_limit: 3
 #      Author      #
 # ---------------- #
 author: Walden Lian
-organization: ECE@SJTU.
-organization_url: http://umji.sjtu.edu.cn/cn/
-location: Shanghai, China
+organization: INI@CMU.
+# organization_url: http://umji.sjtu.edu.cn/cn/
+location: Pittsburgh, Penn
 email: 446731905@qq.com
 
 # ---------------- #
