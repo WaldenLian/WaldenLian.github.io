@@ -4,7 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-testing
+Currently working as Production Engineer at Meta.
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Interested in Distributed Systems, Database Systems, and Large-Scale Cluster Management System.
+
+Skilled in C/C++, Rust, Python, Java, Hack, x86.
